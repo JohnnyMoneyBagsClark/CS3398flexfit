@@ -1,0 +1,42 @@
+/* dashboardPage.css */
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .top-menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .top-menu li {
+    margin: 0 10px;
+  }
+  
+  .top-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .top-menu li a:hover,
+  .top-menu li.active a {
+    background-color: #555;
+  }
+  

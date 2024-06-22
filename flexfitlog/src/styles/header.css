@@ -1,0 +1,55 @@
+/* header.css */
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+.logo {
+    width: 50px; /* Adjust size of logo */
+    height: 50px; /* Adjust size of logo */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Ensure the image stays within the circle */
+  }
+  
+  .logo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .top-menu li {
+    margin: 0 10px;
+  }
+  
+  .top-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .top-menu li a:hover,
+  .top-menu li.active a {
+    background-color: #555;
+  }
+  
