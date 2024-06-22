@@ -4,6 +4,7 @@
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    width: 100%; /* Ensure header spans the full width */
   }
   
   .header-content {
@@ -14,9 +15,8 @@
     margin: 0 auto;
     padding: 0 20px;
   }
-
-
-.logo {
+  
+  .logo {
     width: 50px; /* Adjust size of logo */
     height: 50px; /* Adjust size of logo */
     border-radius: 50%; /* Make it circular */

@@ -1,42 +1,85 @@
 /* dashboardPage.css */
 
 .dashboard-container {
+    padding: 20px;
+  }
+  
+  .dashboard-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .dashboard-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-content p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .posts-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    gap: 20px;
   }
   
-  .header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  .post, .ad {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
   }
   
-  .top-menu {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .top-menu ul {
-    list-style-type: none;
-    padding: 0;
+  .post-header h3 {
     margin: 0;
-    display: flex;
+    font-size: 18px;
+    color: #333;
   }
   
-  .top-menu li {
-    margin: 0 10px;
+  .post-header p {
+    margin: 5px 0 10px;
+    color: #777;
   }
   
-  .top-menu li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+  .post-content p {
+    color: #555;
   }
   
-  .top-menu li a:hover,
-  .top-menu li.active a {
-    background-color: #555;
+  .post-interactions {
+    margin-top: 10px;
+  }
+  
+  .post-interactions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .post-interactions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ad p {
+    color: #333;
+    font-size: 16px;
   }
   

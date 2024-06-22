@@ -1,9 +1,8 @@
-// Header.js
+// header.js
 
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-
-// Import the logo image from the directory
+import { Link } from 'react-router-dom';
+import '../styles/header.css'; // Import header styles
 import logoImg from '../images/FlexFitLogo.webp';
 
 const Header = () => {
@@ -18,11 +17,12 @@ const Header = () => {
         <nav className="top-menu">
           <ul>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/landing">Home</Link>
             </li>
             <li>
               <Link to="/workout">Workout Log</Link>
             </li>
+            {/* Add more navigation links as needed */}
             <li>
               <Link to="/profile">Profile</Link>
             </li>

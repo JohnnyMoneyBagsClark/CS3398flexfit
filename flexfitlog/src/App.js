@@ -1,5 +1,3 @@
-// App.js
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignupPage from './pages/signupPage'; // Adjust the import paths as per your project structure
@@ -20,7 +18,7 @@ const App = () => {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/workout" element={<WorkoutPage />} />
-          <Route path="/landing" element={<LandingPage />} /> {/* Default route to LandingPage */}
+          <Route path="/landing" element={<LandingPage />} />
         </Routes>
       </div>
     </Router>

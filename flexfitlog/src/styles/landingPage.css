@@ -1,6 +1,32 @@
 /* landingPage.css */
 
+/* landingPage.css */
 
+.landing-container {
+    padding: 20px;
+  }
+  
+  .landing-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .landing-content h1, .landing-content h2, .landing-content h3, .landing-content h4 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .landing-content p, .landing-content ul, .landing-content li {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .landing-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
   
 
   

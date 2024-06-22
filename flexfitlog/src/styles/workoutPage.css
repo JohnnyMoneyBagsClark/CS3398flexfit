@@ -1,0 +1,194 @@
+/* workoutPage.css */
+
+.workout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .workout-content {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .left-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .left-menu button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .left-menu button:hover {
+    background-color: #0056b3;
+  }
+  
+  .workout-list {
+    margin-top: 20px;
+  }
+  
+  .workout-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .workout-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .workout-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .workout-list li button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  .workout-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .workout-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 18px;
+  }
+  
+  .workout-actions button:hover {
+    color: #495057;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content .workout-menu {
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content .workout-menu label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-content .workout-menu select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .overlay-content .workout-section {
+    margin-bottom: 20px;
+  }
+  
+  .overlay-content .workout-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .overlay-content textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .overlay-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .overlay-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .overlay-content ul li {
+    margin-bottom: 5px;
+  }
+  
+  .overlay-content .save-button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .overlay-content .save-button:hover {
+    background-color: #218838;
+  }
+  
+  .overlay-content .cancel-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .overlay-content .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
