@@ -17,7 +17,7 @@ const Header = () => {
         <nav className="top-menu">
           <ul>
             <li>
-              <Link to="/landing">Home</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
               <Link to="/workout">Workout Log</Link>
@@ -25,6 +25,9 @@ const Header = () => {
             {/* Add more navigation links as needed */}
             <li>
               <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              <Link to="/login">Logout</Link>
             </li>
           </ul>
         </nav>

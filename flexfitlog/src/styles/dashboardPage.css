@@ -1,18 +1,49 @@
 /* dashboardPage.css */
 
-.dashboard-container {
-    padding: 20px;
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+  
+  /* Container Styles */
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Start content from the top */
+    min-height: calc(100vh - 60px); /* Adjusted to account for header height */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 60px; /* Adjusted to create space below the fixed header */
+  }
+  
+  /* Content Styles */
   .dashboard-content {
+    width: 90%;
     max-width: 800px;
-    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: left;
+    margin-top: 20px; /* Add margin to push content lower */
   }
   
   .dashboard-content h2 {
-    color: #333;
-    margin-bottom: 10px;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
   }
   
   .dashboard-content p {
@@ -20,35 +51,42 @@
     line-height: 1.6;
   }
   
+  /* Search Bar Styles */
   .search-bar {
     margin-bottom: 20px;
+    width: 100%;
   }
   
   .search-bar input {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 0.875rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
   }
   
+  /* Posts Container Styles */
   .posts-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   
+  /* Post and Ad Styles */
   .post, .ad {
-    border: 1px solid #ccc;
+    border: 1px solid #eaeaea;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  /* Post Header Styles */
   .post-header h3 {
     margin: 0;
-    font-size: 18px;
-    color: #333;
+    font-size: 1.125rem;
+    color: #007bff;
   }
   
   .post-header p {
@@ -56,10 +94,12 @@
     color: #777;
   }
   
+  /* Post Content Styles */
   .post-content p {
     color: #555;
   }
   
+  /* Post Interactions Styles */
   .post-interactions {
     margin-top: 10px;
   }
@@ -71,15 +111,18 @@
     padding: 8px 12px;
     margin-right: 10px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
   }
   
   .post-interactions button:hover {
     background-color: #0056b3;
   }
   
+  /* Ad Styles */
   .ad p {
     color: #333;
-    font-size: 16px;
+    font-size: 0.875rem;
   }
   

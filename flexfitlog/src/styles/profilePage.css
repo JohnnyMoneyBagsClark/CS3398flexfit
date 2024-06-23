@@ -4,20 +4,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 60px; /* Adjusted to create space below the fixed header */
   }
   
   .profile-content {
+    width: 100%;
     max-width: 800px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #ffffff; /* Adjust background color */
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px; /* Add margin for separation */
   }
   
   .profile-details {
     display: flex;
     align-items: center;
+    margin-bottom: 20px; /* Add margin for spacing */
   }
   
   .profile-picture {
@@ -31,10 +35,6 @@
     border-radius: 50%;
   }
   
-  .profile-picture-input {
-    margin-top: 10px;
-  }
-  
   .profile-info {
     flex: 1;
   }
@@ -42,10 +42,11 @@
   .profile-input,
   .profile-textarea {
     width: 100%;
-    padding: 8px;
+    padding: 10px; /* Adjust padding for input elements */
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 0.875rem; /* Adjust font size for consistency */
   }
   
   .profile-settings {
@@ -54,14 +55,16 @@
   
   .profile-save-button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #007bff; /* Adjust button color */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 0.875rem; /* Adjust font size */
+    transition: background-color 0.3s ease;
   }
   
   .profile-save-button:hover {
-    background-color: #555;
+    background-color: #0056b3; /* Darker shade on hover */
   }
   

@@ -7,15 +7,10 @@ import '../styles/loginPage.css';
 const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation(); 
-  const [showSocialLogins, setShowSocialLogins] = useState(false);
   const [showSignupSuccess, setShowSignupSuccess] = useState(false);
 
   const handleGoToSignUp = () => {
-    navigate('/signup'); 
-  };
-
-  const toggleSocialLogins = () => {
-    setShowSocialLogins(!showSocialLogins);
+    navigate('/'); 
   };
 
   const handleLogin = (event) => {
@@ -55,31 +50,19 @@ const LoginPage = () => {
           <div className="success-message">Signup successful! Please log in.</div>
         )}
 
-        <div className="toggle-login-option" onClick={toggleSocialLogins}>
-          <span>{showSocialLogins ? 'Use standard login' : 'Login with Social Media'}</span>
-        </div>
-
-        {showSocialLogins ? (
-          <div className="social-login-buttons">
-            <button className="social-login-button google">
-              Connect with Google
-            </button>
+        <form onSubmit={handleLogin} autoComplete="off">
+          <div className="form-group">
+            <label htmlFor="email">Email Address</label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
           </div>
-        ) : (
-          <form onSubmit={handleLogin} autoComplete="off">
-            <div className="form-group">
-              <label htmlFor="email">Email Address</label>
-              <br />
-              <input type="email" id="email" name="email" placeholder="Your email address" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <br />
-              <input type="password" id="password" name="password" placeholder="Enter your password" required />
-            </div>
-            <button type="submit">Log In</button>
-          </form>
-        )}
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <br />
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          </div>
+          <button type="submit">Log In</button>
+        </form>
 
         <button className="bypass-button" onClick={handleBypassLogin}>Bypass Login</button>
         
