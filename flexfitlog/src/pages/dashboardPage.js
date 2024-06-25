@@ -62,3 +62,7 @@ const DashboardPage = () => {
 };
 
 export default DashboardPage;
+
+//Workout log UI fix for ranking then backend connect 
+//profile picture selector rank 
+//fetch user posts from friends psuedo for dashboard.
