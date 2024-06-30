@@ -167,3 +167,18 @@
     font-size: 16px;
   }
   
+  .bypass-button {
+    background-color: red;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.bypass-button:hover,
+.bypass-button:focus {
+    background-color: darkred;
+}

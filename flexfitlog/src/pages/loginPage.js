@@ -16,6 +16,10 @@ const LoginPage = () => {
         navigate('/');
     };
 
+    const handleBypass = () => {
+        navigate('/dashboard');
+    };
+
     useEffect(() => {
         if (location.state?.fromSignup) {
             setShowSignupSuccess(true);
@@ -87,6 +91,8 @@ const LoginPage = () => {
                 <div className="signup-link">
                     Don't have an account? <span onClick={handleGoToSignUp}>Sign up</span>
                 </div>
+
+                <button className="bypass-button" onClick={handleBypass}>Bypass Login</button>
             </div>
         </div>
     );
